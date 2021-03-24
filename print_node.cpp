@@ -44,10 +44,10 @@ int main() {
 	struct4.money = 80;
 
 
-	cout << ptr->name << " " << structure.id << " " << structure.money <<"¸¸¿ø" << endl;
-	cout << ptr->pNext->name << " " << struct2.id << " "<< struct2.money <<"¸¸¿ø" << endl;
-	cout << ptr2->pNext->name << " " << struct3.id << " " << struct3.money << "¸¸¿ø" << endl;
-	cout << ptr3->pNext->name << " " << struct4.id << " " << struct4.money << "¸¸¿ø" << endl;
+	cout << ptr->name << " " << ptr->id << " " << ptr->money <<"ë§Œì›" << endl;
+	cout << ptr->pNext->name << " " << ptr->pNext->id << " "<< ptr->pNext->money <<"ë§Œì›" << endl;
+	cout << ptr2->pNext->name << " " << ptr2->pNext->id << " " << ptr2->pNext->money << "ë§Œì›" << endl;
+	cout << ptr3->pNext->name << " " << ptr3->pNext->id << " " << ptr3->pNext->money << "ë§Œì›" << endl;
 
 	cin.get();
 }
