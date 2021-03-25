@@ -1,45 +1,41 @@
-#include<iostream>
-using namespace std;
-#define node 100
+#include <iostream>
+#include <string>
+#include <iomanip>
 
-struct employee {
-    int number;
-    string name;
-    float money;
+using namespace std;
+
+struct node
+{
+    string name{};
+    int id{};
+    float salary{};
 };
 
-void prtpeople(employee people, int num);
+int main()
+{
+    node team[4];
 
-int main() {
-    employee people[node];
     int i = 0;
-    char op;
+    int j = 0;
 
-    cout << "ÀÚ·á¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä." << endl;
-    while (i < 4) {
-        cout << "1) ÇÐ¹ø : "; cin >> people[i].number; 
-        cout << "2) ÀÌ¸§ : "; cin >> people[i].name;
-        cout << "5) ¿ù±Þ : "; cin >> people[i].money;
-        i++;
+    for (i = 0; i < 4; i++)
+    {
+        cout << "1) ì´ë¦„ : ";
+        cin >> team[i].name;
 
-        cout << "°è¼ÓÇØ¼­ ÀÚ·á¸¦ ÀÔ·ÂÇÏ½Ã°Ú½À´Ï±î? (y,n)";
-        cin >> op;
+        cout << "2) id : ";
+        cin >> team[i].id;
+
+        cout << "3) ìš©ëˆ : ";
+        cin >> team[i].salary;
+
         cout << endl;
-        if (op == 'n') {
-            break;
-        }
     }
 
-
-    for (int j = 0; j < 4; j++) {
-        
-        cout << "ÇÐ¹ø : " << people[j].number << endl;
-        cout << "ÀÌ¸§ : " << people[j].name << endl;
-        cout << "¿ù±Þ : " << people[j].money << "¿ø" << endl;
+    for (j = 0; j < 4; j++)
+    {
+        cout << team[j].name << " " << team[j].id << setw(4) << right << team[j].salary << "ë§Œì›" << endl;
     }
+
     return 0;
 }
-
-
-
-
