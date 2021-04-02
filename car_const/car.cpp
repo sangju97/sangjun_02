@@ -12,11 +12,11 @@ public:
 		name = name_;
 	}
 
-	double Getkm() {
+	double Getcc() {
 		return cc;
 	}
 
-	void Setkm(double cc_) {
+	void Setcc(double cc_) {
 		cc = cc_;
 	}
 
