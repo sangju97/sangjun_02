@@ -3,7 +3,7 @@
 class Car {
 public:
 	Car() : name(), cc(0), hp(0) {}
-	Car(string name, double cc, double hp) : name(name), cc(cc), hp(hp) {}
+	Car(string name, double cc, double hp) : name(name), cc(cc), hp(hp) {} // Car에 name,cc,hp 지정
 
 	string Getname() {
 		return name;
